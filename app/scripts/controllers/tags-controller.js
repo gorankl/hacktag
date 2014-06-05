@@ -1,14 +1,17 @@
 'use strict';
 
 angular.module('hacktagApp')
-  .controller('TagsCtrl', function Tags($scope, Tags, tags, $timeout) {
+  .controller('TagsCtrl', function Tags($scope, Tags, tags) {
+
+    $scope.removedTags = [];
 
     Tags.search();
     $scope.tags = tags;
 
-    $timeout(function() {
-      console.log($scope.tags);
-    }, 3000)
+    $scope.removeTag = function(tag) {
+      $scope.removedTags.push(tag);
+    }
+
 
 
   });
