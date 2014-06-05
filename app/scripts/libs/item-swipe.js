@@ -20,7 +20,7 @@ angular.module('itemSwipe', ['ngTouch'])
               width: '100%',
               position: 'absolute',
               left: '70%',
-              top: '0',
+              top: '0'
             };
 
             function fullSwipe(coords){
