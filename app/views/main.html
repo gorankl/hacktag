@@ -1,36 +1,26 @@
-<div class="header">
-  <ul class="nav nav-pills pull-right">
-    <li class="active"><a ng-href="#">Home</a></li>
-    <li><a ng-href="#">About</a></li>
-    <li><a ng-href="#">Contact</a></li>
-  </ul>
-  <h3 class="text-muted">hacktag</h3>
-</div>
+<div class="wrapper">
+  <div class="header">
+    Seek
+  </div>
 
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
+  <div class="tag-list aside aside-1" ng-controller="TagsCtrl">
+    <div class="container-swipe">
+      <div class="animate-repeat tag-item" ng-repeat="tag in tags.facets">
+        <div  item-swipe="" on-remove="removeTag(tag)">
+          <span class="tag-item_text">{{tag.description}} <span class="quiet">({{tag.count}})</span></span>
+          <span class="tag-item_remove pull-right" ng-click="removeTag(tag)"> <span class="glyphicon glyphicon-remove"></span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="job-list main" ng-controller="JobsCtrl">
+    <div>{{jobs.count}}</div>
+    <div>
+      <div ng-click="job.expand = !job.expand" class="job-item" href="#" ng-repeat="job in jobs.data">
+        <strong class="list-group-item-heading" ng-bind-html="job.title"></strong><br/>
+        <p class="list-group-item-text" ng-bind-html="job.teaser"></p>
+      </div>
+    </div>
+  </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
-</div>
-
-<div class="footer">
-  <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
 </div>
