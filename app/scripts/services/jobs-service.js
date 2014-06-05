@@ -5,21 +5,21 @@ angular.module('hacktagApp')
 
     var search = function() {
 
-      var removedHacktags = "&Q=";
+      var removedHacktags = "nothacktags=";
 
-
-
-      angular.forEach(tags.removedTags, function(value, key){
-        console.log("aaaaaa", key, value);
+      angular.forEach(tags.removedTags, function(tag){
+        removedHacktags += tag.description + ",";
+        console.log(removedHacktags);
       });
 
 
-      var url = "https://api.seek.com.au.web-indigo-int1/v2/jobs/search?location=1000&keywords=bar" + removedHacktags + "&callback=JSON_CALLBACK";
+      var url = "http://d1556/SEEK.Employment.API.Public/jobs/search?classification=1212&" + removedHacktags + "&callback=JSON_CALLBACK";
 
       $http.jsonp(url).success(function(data) {
         console.log(data);
         console.log(data.data[0]);
         jobs.data = data.data;
+        jobs.count = data.totalCount;
       });
 
     };

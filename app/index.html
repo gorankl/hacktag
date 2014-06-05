@@ -42,11 +42,13 @@
         </div>
     </div>
     <div class="job-list col-sm-6" ng-controller="JobsCtrl">
-      <ul>
-        <li ng-repeat="job in jobs.data">
-          <span ng-bind-html="job.title"></span>
-        </li>
-      </ul>
+        <div>{{jobs.count}}</div>
+        <div class="list-group">
+            <a ng-click="job.expand = !job.expand" class="list-group-item" href="#" ng-repeat="job in jobs.data">
+                <div class="list-group-item-heading" ng-bind-html="job.title"></div>
+                <span class="list-group-item-text" ng-if="job.expand" ng-bind-html="job.teaser"></span>
+            </a>
+        </div>
     </div>
   </div>
 </div>
