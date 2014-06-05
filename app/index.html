@@ -33,7 +33,7 @@
   <div class="row">
     <div class="col-md-9" ng-controller="TagsCtrl">
       <ul>
-        <li ng-repeat="tag in tags.facets">{{tag.description}}</li>
+        <li ng-repeat="tag in tags.facets" ng-click="removeTag(tag)">{{tag.description}}</li>
       </ul>
     </div>
     <div class="col-md-3">

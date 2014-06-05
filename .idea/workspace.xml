@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6815584-053c-47ff-87e5-44b2006e3162" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/scripts/models/tags-model.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scripts/controllers/tags-controller.js" afterPath="$PROJECT_DIR$/app/scripts/controllers/tags-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hacktag.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401927969859" ignored="false" />
-    <file path="$PROJECT_DIR$/.idea/workspace.xml" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401931559548" ignored="false" />
-    <file path="/.gitignore" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401927904191" ignored="false" />
+    <file path="/.gitignore" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401933477853" ignored="false" />
     <file path="/tags-service.js" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401931309096" ignored="false" />
     <file path="/main.js" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401928333612" ignored="false" />
-    <file path="/index.html" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401931551697" ignored="false" />
-    <file path="/tags-controller.js" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401931507863" ignored="false" />
+    <file path="/index.html" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401933069544" ignored="false" />
+    <file path="/tags-controller.js" changelist="a6815584-053c-47ff-87e5-44b2006e3162" time="1401933276576" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +78,7 @@
       <file leaf-file-name="tags-service.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/services/tags-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="19" selection-start="382" selection-end="388" vertical-scroll-proportion="0.0">
+            <state line="16" column="12" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -91,13 +93,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="38" selection-start="881" selection-end="881" vertical-scroll-proportion="0.41379312">
+            <state line="35" column="62" selection-start="1243" selection-end="1252" vertical-scroll-proportion="-11.115385">
               <folding>
-                <marker date="1401931551984" expanded="true" signature="865:1016" placeholder="..." />
-                <marker date="1401931551984" expanded="true" signature="958:984" placeholder="..." />
+                <marker date="1401933070669" expanded="true" signature="865:1016" placeholder="..." />
+                <marker date="1401933070669" expanded="true" signature="958:984" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -115,7 +117,16 @@
       <file leaf-file-name="tags-controller.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/scripts/controllers/tags-controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="18" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
+            <state line="11" column="35" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="5" selection-start="67" selection-end="67" vertical-scroll-proportion="0.16831683">
               <folding />
             </state>
           </provider>
@@ -139,12 +150,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/scripts/controllers/main.js" />
         <option value="$PROJECT_DIR$/app/scripts/models/tags-model.js" />
         <option value="$PROJECT_DIR$/app/scripts/services/tags-service.js" />
-        <option value="$PROJECT_DIR$/app/scripts/controllers/tags-controller.js" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/app/scripts/controllers/tags-controller.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -492,13 +503,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="1" selection-start="14" selection-end="14" vertical-scroll-proportion="0.028052805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="21" selection-start="34" selection-end="44" vertical-scroll-proportion="0.08415841">
@@ -520,17 +524,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/tags-controller.js">
+    <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="18" selection-start="135" selection-end="135" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/scripts/services/tags-service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="382" selection-end="388" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="35" column="62" selection-start="1243" selection-end="1252" vertical-scroll-proportion="-11.115385">
+          <folding>
+            <marker date="1401933070669" expanded="true" signature="865:1016" placeholder="..." />
+            <marker date="1401933070669" expanded="true" signature="958:984" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -541,13 +541,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/index.html">
+    <entry file="file://$PROJECT_DIR$/app/scripts/services/tags-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="38" selection-start="881" selection-end="881" vertical-scroll-proportion="0.41379312">
-          <folding>
-            <marker date="1401931551984" expanded="true" signature="865:1016" placeholder="..." />
-            <marker date="1401931551984" expanded="true" signature="958:984" placeholder="..." />
-          </folding>
+        <state line="16" column="12" selection-start="444" selection-end="444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/scripts/controllers/tags-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="35" selection-start="255" selection-end="255" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="5" selection-start="67" selection-end="67" vertical-scroll-proportion="0.16831683">
+          <folding />
         </state>
       </provider>
     </entry>
