@@ -21,6 +21,7 @@
   <!-- build:css({.tmp,app}) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
+  <script src="scripts/libs/modernizr.js"></script>
 </head>
 <body ng-app="hacktagApp">
 <!--[if lt IE 7]>
@@ -28,16 +29,19 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 <!-- Add your site or application content here -->
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-6" ng-controller="TagsCtrl">
+    <div class="tag-list col-sm-6" ng-controller="TagsCtrl">
         <div class="container-swipe">
-          <div class="animate-repeat" ng-repeat="tag in tags.facets">
-            <div class="test"  item-swipe="" on-remove="removeTag(tag)">{{tag.description}}</div>
+          <div class="animate-repeat tag-item" ng-repeat="tag in tags.facets">
+            <div  item-swipe="" on-remove="removeTag(tag)">
+                <span class="tag-item_text">{{tag.description}}</span>
+                <span class="tag-item_remove pull-right" ng-click="removeTag(tag)"> <span class="glyphicon glyphicon-remove"></span></span>
+            </div>
           </div>
         </div>
     </div>
-    <div class="col-sm-6" ng-controller="JobsCtrl">
+    <div class="job-list col-sm-6" ng-controller="JobsCtrl">
       <ul>
         <li ng-repeat="job in jobs.data">
           <span ng-bind-html="job.title"></span>
