@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('hacktagApp')
-  .controller('TagsCtrl', function Tags($scope, Tags, tags) {
+  .controller('TagsCtrl', function TagsCtrl($scope, Tags, tags) {
 
     $scope.removedTags = [];
 

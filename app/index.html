@@ -38,8 +38,12 @@
           </div>
         </div>
     </div>
-    <div class="col-md-8">
-      b
+    <div class="col-md-3" ng-controller="JobsCtrl">
+      <ul>
+        <li ng-repeat="job in jobs.data">
+          <span ng-bind-html="job.title"></span>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
@@ -67,8 +71,11 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/libs/item-swipe.js"></script>
 <script src="scripts/services/tags-service.js"></script>
+<script src="scripts/services/jobs-service.js"></script>
 <script src="scripts/models/tags-model.js"></script>
+<script src="scripts/models/jobs-model.js"></script>
 <script src="scripts/controllers/tags-controller.js"></script>
+<script src="scripts/controllers/jobs-controller.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <!-- endbuild -->
 </body>
