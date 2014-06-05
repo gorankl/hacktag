@@ -9,9 +9,8 @@ angular.module('hacktagApp')
     $scope.tags = tags;
 
     $scope.removeTag = function(tag) {
+      $scope.tags.facets.splice($scope.tags.facets.indexOf(tag), 1);
       $scope.removedTags.push(tag);
     }
-
-
 
   });
