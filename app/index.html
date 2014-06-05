@@ -31,29 +31,29 @@
 <!-- Add your site or application content here -->
 <div class="wrapper">
     <div class="header">
-        Seek
+        <h1>Seek Find Your Fit</h1>
     </div>
-
-    <div class="tag-list aside aside-1" ng-controller="TagsCtrl">
-        <div class="container-swipe">
-          <div class="animate-repeat tag-item" ng-repeat="tag in tags.facets">
-            <div  item-swipe="" on-remove="removeTag(tag)">
-                <span class="tag-item_text">{{tag.description}} <span class="quiet">({{tag.count}})</span></span>
-                <span class="tag-item_remove pull-right" ng-click="removeTag(tag)"> <span class="glyphicon glyphicon-remove"></span></span>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div class="job-list main" ng-controller="JobsCtrl">
-        <div>{{jobs.count}}</div>
-        <div>
-            <div ng-click="job.expand = !job.expand" class="job-item" href="#" ng-repeat="job in jobs.data">
-                <strong class="list-group-item-heading" ng-bind-html="job.title"></strong><br/>
-                <p class="list-group-item-text" ng-bind-html="job.teaser"></p>
+    <div class="app-container">
+        <div class="tag-list aside aside-1" ng-controller="TagsCtrl">
+            <div class="container-swipe">
+              <div class="animate-repeat tag-item" ng-repeat="tag in tags.facets">
+                <div  item-swipe="" on-remove="removeTag(tag)">
+                    <span class="tag-item_text">{{tag.description}} <span class="quiet">({{tag.count}})</span></span>
+                    <span class="tag-item_remove pull-right" ng-click="removeTag(tag)"> <span class="glyphicon glyphicon-remove"></span></span>
+                </div>
+              </div>
             </div>
         </div>
+        <div class="job-list main" ng-controller="JobsCtrl">
+            <div>{{jobs.count}}</div>
+            <div>
+                <div ng-click="job.expand = !job.expand" class="job-item" href="#" ng-repeat="job in jobs.data">
+                    <strong class="list-group-item-heading" ng-bind-html="job.title"></strong><br/>
+                    <p class="list-group-item-text" ng-bind-html="job.teaser"></p>
+                </div>
+            </div>
+        </div>
     </div>
-
 </div>
 
 <!--[if lt IE 9]>
