@@ -59,17 +59,92 @@
 
 body {
     background: #efefef;
+    overflow: hidden;
 }
 
 /*Layout*/
+.wrapper {
+
+}
+
+/* We tell all items to be 100% width */
+.header, .main, .nav, .aside, .footer {
+
+}
+
+.header {
+    height: 50px;
+    background: #e60a7c;
+    color: #fff;
+}
+ .main, .aside{
+
+     overflow: auto;
+}
+
+
+/* We rely on source order for mobile-first approach
+ * in this case:
+ * 1. header
+ * 2. nav
+ * 3. main
+ * 4. aside
+ * 5. footer
+ */
+
+/* Medium screens */
+@media all and (min-width: 600px) {
+    /* We tell both sidebars to share a row */
+
+    .header {
+        height: 50px;
+        background: #e60a7c;
+        position: absolute;
+        top: 0px;
+        width: 990px;
+    }
+
+    .main, .aside-1 {
+        position: absolute;
+        top: 50px;
+        height: 600px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .aside-1 {
+        width: 300px;
+    }
+    .main    {
+        width: 690px;
+        left: 300px;
+        padding: 20px;
+    }
+    .footer  { }
+}
+
+/* Large screens */
+@media all and (min-width: 800px) {
+    /* We invert order of first sidebar and main
+     * And tell the main element to take twice as much width as the other two sidebars
+     */
+    .main {  }
+
+    .aside-1 { }
+    .main    {  }
+    .footer  { }
+}
+
 
 .tag-list {
     border-right: #d5d5d5;
+}
+
+.flex-container {
 
 }
 
 .job-list {
-    background: #fff;
+    background: #efefef;
     border-right: #d5d5d5;
 }
 
@@ -77,8 +152,17 @@ body {
 /*Tags*/
 .tag-item {
     background: #fff;
-    height: 50px;
+    height: 51px;
     border-bottom: 1px solid #f1f1f1;
+}
+
+.tag-item  .swiper {
+    border-left: 1px solid #f1f1f1;
+    background: #fff;
+}
+
+.item-swipe-wrapper {
+    background: #404040;
 }
 
 .tag-item_text {
@@ -106,3 +190,15 @@ body {
     transition: 50ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
      display: block;
  }
+
+.job-item {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin-bottom: 10px;
+}
+
+.list-group-item-text {
+    color: #777;
+}

@@ -61,7 +61,7 @@ angular.module('itemSwipe', ['ngTouch'])
             $swipe.bind($swiper, {
               'start': function(coords) {
                 startCoords = coords;
-                scope.swiperStyle = {opacity: 0.5};
+              //  scope.swiperStyle = {opacity: 0.5};
                 scope.$apply();
               },
               'cancel': function() {

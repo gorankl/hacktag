@@ -29,28 +29,31 @@
   your browser</a> to improve your experience.</p>
 <![endif]-->
 <!-- Add your site or application content here -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="tag-list col-sm-6" ng-controller="TagsCtrl">
+<div class="wrapper">
+    <div class="header">
+        Seek
+    </div>
+
+    <div class="tag-list aside aside-1" ng-controller="TagsCtrl">
         <div class="container-swipe">
           <div class="animate-repeat tag-item" ng-repeat="tag in tags.facets">
             <div  item-swipe="" on-remove="removeTag(tag)">
-                <span class="tag-item_text">{{tag.description}}</span>
+                <span class="tag-item_text">{{tag.description}} <span class="quiet">({{tag.count}})</span></span>
                 <span class="tag-item_remove pull-right" ng-click="removeTag(tag)"> <span class="glyphicon glyphicon-remove"></span></span>
             </div>
           </div>
         </div>
     </div>
-    <div class="job-list col-sm-6" ng-controller="JobsCtrl">
+    <div class="job-list main" ng-controller="JobsCtrl">
         <div>{{jobs.count}}</div>
-        <div class="list-group">
-            <a ng-click="job.expand = !job.expand" class="list-group-item" href="#" ng-repeat="job in jobs.data">
-                <div class="list-group-item-heading" ng-bind-html="job.title"></div>
-                <span class="list-group-item-text" ng-if="job.expand" ng-bind-html="job.teaser"></span>
-            </a>
+        <div>
+            <div ng-click="job.expand = !job.expand" class="job-item" href="#" ng-repeat="job in jobs.data">
+                <strong class="list-group-item-heading" ng-bind-html="job.title"></strong><br/>
+                <p class="list-group-item-text" ng-bind-html="job.teaser"></p>
+            </div>
         </div>
     </div>
-  </div>
+
 </div>
 
 <!--[if lt IE 9]>
