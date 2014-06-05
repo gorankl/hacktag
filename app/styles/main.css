@@ -77,7 +77,14 @@ body {
     background: #e60a7c;
     color: #fff;
 }
- .main, .aside{
+.header h1 {
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0;
+    padding:  0 0 0 16px;
+}
+
+.main, .aside{
 
      overflow: auto;
 }
@@ -104,18 +111,27 @@ body {
         width: 990px;
     }
 
-    .main, .aside-1 {
+    .app-container {
         position: absolute;
         top: 50px;
+        overflow: hidden;
+        width: 990px;
         height: 600px;
+
+    }
+
+    .aside-1, .main {
         -webkit-overflow-scrolling: touch;
+        height: 600px;
     }
 
     .aside-1 {
         width: 300px;
+        position: absolute;
     }
     .main    {
         width: 690px;
+        position: absolute;
         left: 300px;
         padding: 20px;
     }
@@ -202,3 +218,4 @@ body {
 .list-group-item-text {
     color: #777;
 }
+
