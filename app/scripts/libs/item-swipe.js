@@ -78,7 +78,8 @@ angular.module('itemSwipe', ['ngTouch'])
                 if (fullSwipe(endCoords)) {
                   scope.proceed = true;
                   updateElementPosition($document.width());
-                }else {
+                }
+                else {
                   scope.proceed = false;
                   updateElementPosition(0);
                 }
