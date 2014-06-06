@@ -6,19 +6,19 @@ angular.module('hacktagApp')
       name: "Office-Based", //b
       classifications: "6251,6317,1216,6076,1210",
       size: "large",
-      style: "top: 100px;left: 400px"
+      style: "top: 100px;left: 400px",
     },
     {
       name: "Number Crunching", //m
       classifications: "1200,1203,1214",
       size: "medium",
-      style: "top: 203px;left:5px"
+      style: "top: 427px;left:320px"
     },
     {
       name: "Labour", //m
       classifications: "1206,1225,6058,6092",
       size: "medium",
-      style: "top: 332px;left:774px"
+      style: "top: 356px;left:508px"
     },
     {
       name: "Creative", //s
