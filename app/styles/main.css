@@ -62,6 +62,19 @@ body {
     overflow: hidden;
 }
 
+.logo {
+    background-image: url(../images/sk_sprite.png);
+    background-repeat: no-repeat;
+    background-size: 17.5rem auto;
+    height: 50px;
+    background-position: 50% -11.2rem;
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 45%;
+}
+
 /*Layout*/
 .wrapper {
 
