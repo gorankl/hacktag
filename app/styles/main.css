@@ -172,6 +172,10 @@ body {
     border-bottom: 1px solid #f1f1f1;
 }
 
+.undo-div {
+    color: #fff;
+}
+
 .tag-item  .swiper {
     border-left: 1px solid #f1f1f1;
     background: #fff;

@@ -1,12 +1,6 @@
-<div class="classification-list">
-<a class="classification-item classification-item__1 classification-item__checked">
-    <span class="classification-item_inner">Customer Facing</span>
-</a>
-    <a class="classification-item classification-item__2">
-        <span class="classification-item_inner">Classification 2</span>
-    </a>
-    <a class="classification-item classification-item__3">
-        <span class="classification-item_inner">Classification 3</span>
-    </a>
+<div class="classification-list" ng-controller="ClassificationCtrl">
+  <div ng-repeat="bubble in classifications" class="classification-item" style="{{bubble.style}}" ng-click="toggle(bubble)" ng-class="{ 'classification-item__checked': bubble.selected }">
+    <span class="classification-item_inner">{{bubble.name}}</span>
+  </div>
 </div>
 <a href="#knockout"> Next </a>
