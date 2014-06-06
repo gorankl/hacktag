@@ -3,6 +3,8 @@
 angular.module('hacktagApp')
   .controller('JobsCtrl', function JobsCtrl($scope, jobs, Jobs, tags, $interval) {
 
+    tags.removedTags = [];
+
     Jobs.search();
     $scope.jobs = jobs;
 
