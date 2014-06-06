@@ -11,7 +11,7 @@
       </div>
     </div>
     <div class="job-list main" ng-controller="JobsCtrl">
-      <span class="badge job-count">{{jobs.count}} jobs found</span>
+      <span class="badge job-count">{{jobs.count}}</span> jobs <br><br/>
       <div>
         <div ng-click="job.expand = !job.expand" class="job-item" href="#" ng-repeat="job in jobs.data">
           <strong class="list-group-item-heading" ng-bind-html="job.title"></strong><br/>
