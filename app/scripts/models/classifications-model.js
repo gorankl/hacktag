@@ -5,14 +5,12 @@ angular.module('hacktagApp')
     {
       name: "Customer Facing",
       classifications: "1,2,3",
-      x: "15",
-      y: "15"
+      style: "top: 100px;left: 400px;height: 300px;width: 300px;"
     },
     {
       name: "Some other bubble",
       classifications: "3,4,5",
-      x: "50",
-      y: "50"
+      style: "top: 50px;left: 215px;"
     }
   ]
 

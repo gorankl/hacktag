@@ -1,4 +1,6 @@
-<div ng-controller="ClassificationCtrl">
-  <div ng-repeat="bubble in classifications">{{bubble.name}}</div>
-  <a href="#knockout"> Next </a>
+<div class="classification-list" ng-controller="ClassificationCtrl">
+  <div ng-repeat="bubble in classifications" class="classification-item" style="{{bubble.style}}" ng-click="toggle(bubble)" ng-class="{ 'classification-item__checked': bubble.selected }">
+    <span class="classification-item_inner">{{bubble.name}}</span>
+  </div>
 </div>
+<a href="#knockout"> Next </a>
