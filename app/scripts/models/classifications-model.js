@@ -3,64 +3,74 @@
 angular.module('hacktagApp')
   .value('classifications', [
     {
-      name: "Office-Based",
+      name: "Office-Based", //b
       classifications: "6251,6317,1216,6076,1210",
-      style: "top: 100px;left: 400px;height: 300px;width: 300px;"
+      size: "large",
+      style: "top: 100px;left: 400px"
     },
     {
-      name: "Number Crunching",
+      name: "Number Crunching", //m
       classifications: "1200,1203,1214",
-      style: "top: 50px;left: 215px;"
+      size: "medium",
+      style: "top: 203px;left:5px"
     },
     {
-      name: "Labour",
+      name: "Labour", //m
       classifications: "1206,1225,6058,6092",
-      style: "top: 50px;left: 215px;"
+      size: "medium",
+      style: "top: 332px;left:774px"
     },
     {
-      name: "Creative",
+      name: "Creative", //s
       classifications: "6008,6304,6263",
-      style: "top: 50px;left: 215px;"
+      size: "small",
+      style: "top: 346px;left:405px"
     },
     {
-      name: "Technical",
+      name: "Technical", //m
       classifications: "6281,1223,1209",
-      style: "top: 50px;left: 215px;"
+      style: "top: 22px;left:70px"
     },
     {
-      name: "Helping Others",
+      name: "Helping Others", //m
       classifications: "1211,6163",
-      style: "top: 50px;left: 215px;"
+      style: "top: 129px;left:754px"
     },
     {
-      name: "Fitness",
+      name: "Fitness", //s
       classifications: "6246",
-      style: "top: 50px;left: 215px;"
+      size: "small",
+      style: "top: 172px;left:662px"
     },
     {
-      name: "Working Outdoors",
+      name: "Working Outdoors", //m
+      size: "medium",
       classifications: "1206,6205",
-      style: "top: 50px;left: 215px;"
+      style: "top: 266px;left:634px"
     },
     {
-      name: "Telephone Calling",
+      name: "Telephone Calling", //m
       classifications: "1203",
-      style: "top: 50px;left: 215px;"
+      size: "medium",
+      style: "top: 21px;left:613px"
     },
     {
-      name: "Customer-Facing",
+      name: "Customer-Facing", //b
       classifications: "1204,1212,6043",
-      style: "top: 50px;left: 215px;"
+      size: "large",
+      style: "top: 195px;left:154px"
     },
     {
-      name: "Selling",
+      name: "Selling", //m
+      size: "medium",
       classifications: "1220,6362",
-      style: "top: 50px;left: 215px;"
+      style: "top: 50px;left:273px"
     },
     {
-      name: "Teaching",
+      name: "Teaching", //s
+      size: "small",
       classifications: "6123",
-      style: "top: 50px;left: 215px;"
+      style: "top: 22px;left:412px"
     }
   ]
 

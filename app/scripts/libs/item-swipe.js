@@ -73,7 +73,6 @@ angular.module('itemSwipe', ['ngTouch'])
               },
               'move': function(coords) {
                 updateElementPosition(coords.x - startCoords.x);
-
               },
               'end': function(endCoords) {
                 if (fullSwipe(endCoords)) {
