@@ -5,6 +5,9 @@ angular.module('hacktagApp')
     $scope.classifications = classifications;
 
     $scope.bubbleSelected = false;
+    angular.forEach($scope.classifications, function(b) {
+      if (b.selected) $scope.bubbleSelected = true;
+    });
 
     $scope.toggle = function(bubble) {
       if (bubble.selected) {
