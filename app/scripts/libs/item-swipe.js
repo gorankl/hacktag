@@ -7,8 +7,9 @@ angular.module('itemSwipe', ['ngTouch'])
       return {
         transclude: true,
         template: '<div class="item-swipe-wrapper" style="position: relative">' +
-          '<div class="swiper" ng-style="swiperStyle" ng-transclude style="position: relative"></div>' +
-          //'<div class="undo-div" ng-style="undoStyle" ng-click="proceed = false">Undo</div>' +
+          '<div class="undo-div" ng-style="undoStyle"><span class="glyphicon glyphicon-remove"></span></div>' +
+          '<div class="swiper" ng-style="swiperStyle" ng-transclude style="position: relative"></div>'
+           +
           '</div>',
         link: {
           post: function postLink(scope, iElement, iAttrs, controller) {
@@ -16,11 +17,11 @@ angular.module('itemSwipe', ['ngTouch'])
             $swiper = angular.element('.swiper', iElement);
             scope.proceed = false;
             scope.undoStyle = {
-              opacity: 0,
+              opacity:.25,
               width: '100%',
               position: 'absolute',
-              left: '70%',
-              top: '0'
+              left: '15px',
+              top: '15px'
             };
 
             function fullSwipe(coords){
@@ -61,6 +62,7 @@ angular.module('itemSwipe', ['ngTouch'])
             $swipe.bind($swiper, {
               'start': function(coords) {
                 startCoords = coords;
+                scope.undoStyle.opacity = .75;
               //  scope.swiperStyle = {opacity: 0.5};
                 scope.$apply();
               },

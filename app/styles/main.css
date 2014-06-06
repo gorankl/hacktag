@@ -172,6 +172,10 @@ body {
     border-bottom: 1px solid #f1f1f1;
 }
 
+.undo-div {
+    color: #fff;
+}
+
 .tag-item  .swiper {
     border-left: 1px solid #f1f1f1;
     background: #fff;
@@ -224,39 +228,38 @@ body {
     border-radius: 50%;
     height: 200px;
     width: 200px;
-    background-color: #666;
+    background-color: #404040;
     color: #fff;
     position: absolute;
     text-align: center;
-
+    text-transform: uppercase;
+    border: 8px solid  #404040;
 }
 
 .classification-item__checked {
-
+    border: 6px solid  #00a641;
+    -webkit-transition: 50ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -moz-transition: 50m5s cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -ms-transition: 50ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+    -o-transition: 50ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
 }
 
 .classification-item_inner {
     position: relative;
-    top: 48%;
+    top: 47%;
 }
 
-.classification-item__3 {
-    top: 252px;
-    left: 258px;
+.classification-item-small {
+    height: 90px;
+    width: 90px;
+}
+.classification-item-medium {
     height: 150px;
     width: 150px;
 }
-.classification-item__4 {
-    top: 400px;
-    left: 200px;
-    height: 400px;
-    width: 400px;
-}
-.classification-item__5 {
-    top: 400px;
-    left: 200px;
-    height: 400px;
-    width: 400px;
+.classification-item-large {
+    height: 260px;
+    width: 260px;
 }
 
 

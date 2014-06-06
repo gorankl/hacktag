@@ -1,5 +1,5 @@
 <div class="classification-list" ng-controller="ClassificationCtrl">
-  <div ng-repeat="bubble in classifications" class="classification-item" style="{{bubble.style}}" ng-click="toggle(bubble)" ng-class="{ 'classification-item__checked': bubble.selected }">
+  <div ng-repeat="bubble in classifications" class="classification-item classification-item-{{bubble.size}}" style="{{bubble.style}}" ng-click="toggle(bubble)" ng-class="{ 'classification-item__checked': bubble.selected }">
     <span class="classification-item_inner">{{bubble.name}}</span>
   </div>
 <ul ng-if="bubbleSelected" class="pager pull-right">
