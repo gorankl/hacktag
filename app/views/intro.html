@@ -2,5 +2,9 @@
   <div ng-repeat="bubble in classifications" class="classification-item" style="{{bubble.style}}" ng-click="toggle(bubble)" ng-class="{ 'classification-item__checked': bubble.selected }">
     <span class="classification-item_inner">{{bubble.name}}</span>
   </div>
+<ul ng-if="bubbleSelected" class="pager pull-right">
+  <li>
+    <a href="#knockout"> Next </a>
+  </li>
+</ul>
 </div>
-<a href="#knockout"> Next </a>

@@ -12,12 +12,13 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/intro.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/start.html'
+      })
+      .when('/classification', {
+        templateUrl: 'views/intro.html'
       })
       .when('/knockout', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/main.html'
       })
       .otherwise({
         redirectTo: '/'

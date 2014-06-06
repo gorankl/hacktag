@@ -50,7 +50,7 @@ angular.module('hacktagApp')
     {
       name: "Customer-Facing",
       classifications: "1204,1212,6043",
-      style: "top: 50px;left: 215px;"
+      style: "top: 350px;left: 315px;"
     },
     {
       name: "Selling",
